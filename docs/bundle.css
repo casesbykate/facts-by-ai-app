@@ -1,0 +1,234 @@
+/*
+https://github.com/Hanul/sky-css-base
+v0.0.1 | 20210109
+Author: Sim Young Jae
+License: MIT
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*,
+*:focus {
+  outline: 0;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+}
+button,
+input {
+  border: none;
+}
+[hidden] {
+  display: none !important;
+}
+[contenteditable] {
+  -webkit-tap-highlight-color: transparent;
+}
+.float-wrapper:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html,
+body {
+  background-color: #000000;
+}
+.layout {
+  position: relative;
+  background-image: url(/images/background@2x.png);
+  background-size: contain;
+  width: 1280px;
+  height: 716px;
+  margin: auto;
+}
+.layout .content {
+  position: absolute;
+  left: 420px;
+  top: 160px;
+  width: 470px;
+  height: 302px;
+  padding-bottom: 100px;
+  overflow-y: auto;
+  color: #39FF14;
+  line-height: 1.5em;
+}
+.layout footer {
+  position: absolute;
+  left: 542px;
+  top: 525px;
+  color: #4B3C1E;
+}
+.samplecase-view .case {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.selectable {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.selectable .option {
+  opacity: 0.5;
+}
+.selectable .option.active {
+  opacity: 1;
+}
+.selectable .option:hover {
+  opacity: 1;
+}
+.popup-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 1280px;
+  height: 716px;
+}
+.popup {
+  position: absolute;
+  left: 440px;
+  top: 200px;
+  width: 400px;
+  height: 227px;
+  margin: auto;
+  background-image: url(/images/popup@2x.png);
+  background-size: contain;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
