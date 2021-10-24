@@ -1,6 +1,5 @@
+import { BodyNode } from "@hanul/skynode";
 import { SkyRouter } from "skyrouter";
-import superagent from "superagent";
-import Alert from "./component/Alert";
 import Home from "./view/Home";
 import Layout from "./view/Layout";
 import MyCase from "./view/MyCase";
@@ -16,5 +15,11 @@ import SampleCase from "./view/SampleCase";
     if (sessionStorage.__spa_path) {
         SkyRouter.go(sessionStorage.__spa_path);
         sessionStorage.removeItem("__spa_path");
+    }
+
+    if (window.innerWidth > 1280) {
+        BodyNode.style({
+            zoom: window.innerWidth / 1280,
+        });
     }
 })();

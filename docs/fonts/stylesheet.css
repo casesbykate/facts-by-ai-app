@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'stoNe';
+    src: url('stoNe.woff2') format('woff2'),
+        url('stoNe.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmo Pro';
+    src: url('NeoDunggeunmoPro-Regular.woff2') format('woff2'),
+        url('NeoDunggeunmoPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

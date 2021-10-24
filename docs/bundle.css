@@ -187,12 +187,14 @@ body {
   overflow-y: auto;
   color: #39FF14;
   line-height: 1.5em;
+  font-family: 'NeoDunggeunmo Pro';
 }
 .layout footer {
   position: absolute;
-  left: 542px;
+  left: 520px;
   top: 525px;
   color: #4B3C1E;
+  font-family: 'stoNe';
 }
 .samplecase-view .case {
   margin-top: 20px;
@@ -230,5 +232,6 @@ body {
   background-size: contain;
   color: #ffffff;
   padding: 40px 20px;
+  font-family: 'NeoDunggeunmo Pro';
 }
 

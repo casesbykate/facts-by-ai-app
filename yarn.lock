@@ -545,10 +545,10 @@
   resolved "https://registry.yarnpkg.com/@hanul/debouncer/-/debouncer-0.0.1.tgz#0c7b0242e6c54c02ea74a2939c529de6845c1235"
   integrity sha512-i5oU9vqA4bWHfleEGnykDH92q4Dtu1qmY1enn3cFlojEiSQFf7l1wrYjaYlN2kqkXRpXn4a/iEjWWPDtl5gJJg==
 
-"@hanul/skynode@^0.0.16":
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@hanul/skynode/-/skynode-0.0.16.tgz#d3c419a81f265429a1d4255e297c15dcc233aa72"
-  integrity sha512-IQYRNB4Ra5wV9m7sx/byqA/bWpfmOXG12ZNCJMHGHpsquD/lWb6ncaHi3DRpt5HYSkl+gsaZ048BfUmhxH0Jew==
+"@hanul/skynode@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/@hanul/skynode/-/skynode-0.0.17.tgz#ca8bd4fdbb9fb0081835e5309c577164faef70fb"
+  integrity sha512-RUtBr6ofzcmlHlGelJOk93iP25PD0g40ZpunXjXw6tZjUXc/J9A0DuWfHaDm6iXUTQ6HjWb5uO4mcWh9ReNnSg==
   dependencies:
     "@hanul/debouncer" "^0.0.1"
     eventcontainer "^0.0.4"
