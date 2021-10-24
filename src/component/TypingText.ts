@@ -8,8 +8,7 @@ export default class TypingText extends DomNode {
 
     constructor(private text: string, private callback?: () => void) {
         super("p.typing-text");
-        //this.interval = setInterval(() => this.typing(), 20) as any;
-        this.interval = setInterval(() => this.typing(), 0) as any;
+        this.interval = setInterval(() => this.typing(), 20) as any;
     }
 
     private typing() {
