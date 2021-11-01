@@ -6,7 +6,7 @@ export default class Selectable extends DomNode {
     private focusedOptionNode;
     constructor(options: {
         name: string;
-        callback: () => void;
+        callback: () => any;
     }[]);
     private focus;
     private keydownHandler;

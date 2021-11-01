@@ -2,7 +2,7 @@ import { View, ViewParams } from "skyrouter";
 export default class SampleCase implements View {
     private container;
     constructor();
-    private part1;
+    private generate;
     changeParams(params: ViewParams, uri: string): void;
     close(): void;
 }

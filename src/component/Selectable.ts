@@ -8,7 +8,7 @@ export default class Selectable extends DomNode {
 
     constructor(private options: {
         name: string,
-        callback: () => void,
+        callback: () => any,
     }[]) {
         super(".selectable");
         for (const option of options) {
@@ -16,8 +16,10 @@ export default class Selectable extends DomNode {
             this.append(el(".option-container",
                 optionNode = el("a.option", `> ${option.name}`, {
                     click: () => {
-                        option.callback();
-                        window.removeEventListener("keydown", this.keydownHandler);
+                        const result = option.callback();
+                        if (result !== undefined) {
+                            window.removeEventListener("keydown", this.keydownHandler);
+                        }
                     },
                 }),
             ));

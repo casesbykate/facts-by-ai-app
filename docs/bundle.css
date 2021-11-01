@@ -200,6 +200,9 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.loading > img {
+  display: block;
+}
 .selectable {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -231,7 +234,28 @@ body {
   background-image: url(/images/popup@2x.png);
   background-size: contain;
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 15px 0;
   font-family: 'NeoDunggeunmo Pro';
+}
+.popup > main {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 40px 20px;
+}
+.popup > main > form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.popup > main > form > input {
+  font-family: 'NeoDunggeunmo Pro';
+  padding: 5px 10px;
+}
+.select-case-popup .case-list .case {
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #ffffff;
+}
+.select-case-popup .case-list .case.selected {
+  border: 1px solid #39FF14;
 }
 

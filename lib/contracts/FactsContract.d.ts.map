@@ -1,0 +1,1 @@
+{"version":3,"file":"FactsContract.d.ts","sourceRoot":"","sources":["../../src/contracts/FactsContract.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAY,EAAE,MAAM,0BAA0B,CAAC;AACxD,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,cAAM,aAAc,SAAQ,QAAQ;;IAMnB,MAAM,CAAC,EAAE,EAAE,YAAY,GAAG,OAAO,CAAC,OAAO,CAAC;IAI1C,IAAI,CAAC,EAAE,EAAE,YAAY,EAAE,IAAI,EAAE,MAAM;CAGnD;;AAED,wBAAmC"}
