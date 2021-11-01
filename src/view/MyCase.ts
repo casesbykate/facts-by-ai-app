@@ -71,21 +71,23 @@ export default class MyCase implements View {
                                                             const mixNeeded = utils.parseEther("1");
 
                                                             const mint = async () => {
-                                                                await FactsContract.mint(selected, result.text);
-                                                                setTimeout(() => {
-                                                                    open(`https://opensea.io/assets/klaytn/${FactsContract.address}/${selected}`);
-                                                                    new Alert("민팅이 완료되었습니다.");
+                                                                if (result.text !== null && result.text !== undefined && result.text !== "") {
+                                                                    await FactsContract.mint(selected, result.text);
+                                                                    setTimeout(() => {
+                                                                        open(`https://opensea.io/assets/klaytn/${FactsContract.address}/${selected}`);
+                                                                        new Alert("민팅이 완료되었습니다.");
 
-                                                                    new Selectable([{
-                                                                        name: "케이스 선택하기",
-                                                                        callback: () => new SelectCasePopup((selected) => {
-                                                                            this.generate(selected);
-                                                                        }),
-                                                                    }, {
-                                                                        name: "돌아가기",
-                                                                        callback: () => SkyRouter.go("/"),
-                                                                    }]).appendTo(this.container);
-                                                                }, 2000);
+                                                                        new Selectable([{
+                                                                            name: "케이스 선택하기",
+                                                                            callback: () => new SelectCasePopup((selected) => {
+                                                                                this.generate(selected);
+                                                                            }),
+                                                                        }, {
+                                                                            name: "돌아가기",
+                                                                            callback: () => SkyRouter.go("/"),
+                                                                        }]).appendTo(this.container);
+                                                                    }, 2000);
+                                                                }
                                                             };
 
                                                             const balance = await MixContract.balanceOf(owner);
