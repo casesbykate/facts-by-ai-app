@@ -255,6 +255,9 @@ body {
   margin-top: 20px;
   border: 1px solid #ffffff;
 }
+.select-case-popup .case-list .case h5 {
+  padding: 10px;
+}
 .select-case-popup .case-list .case.selected {
   border: 1px solid #39FF14;
 }

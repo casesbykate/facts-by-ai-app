@@ -57,6 +57,7 @@ export default class SelectCasePopup extends Popup {
                 if (await FactsContract.exists(tokenId) !== true) {
                     let _case: DomNode;
                     this.caseList.append(_case = el("a.case",
+                        el("h5", `Case #${tokenId}`),
                         el("img", { src: `https://storage.googleapis.com/cbk-nft/v2/${tokenId}.png`, height: "300" }),
                         {
                             click: () => {
