@@ -2042,7 +2042,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nclass Klaytn {\r\n    constructor() {\r\n        this.caver = new window.Caver(new window.Caver.providers.WebsocketProvider(\"wss://klaytn-node.klu.bs:9091\"));\r\n    }\r\n    createContract(address, abi) {\r\n        return this.caver.contract.create(abi, address);\r\n    }\r\n}\r\nexports[\"default\"] = new Klaytn();\r\n\n\n//# sourceURL=webpack:///./src/klaytn/Klaytn.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nclass Klaytn {\r\n    constructor() {\r\n        this.caver = new window.Caver(new window.Caver.providers.WebsocketProvider(\"wss://klaytn04.fandom.finance/ws\"));\r\n    }\r\n    createContract(address, abi) {\r\n        return this.caver.contract.create(abi, address);\r\n    }\r\n}\r\nexports[\"default\"] = new Klaytn();\r\n\n\n//# sourceURL=webpack:///./src/klaytn/Klaytn.ts?");
 
 /***/ }),
 
