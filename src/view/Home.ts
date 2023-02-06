@@ -14,22 +14,13 @@ export default class Home implements View {
         Layout.current.content.append(this.container = el(".home-view",
             new TypingText(`Facts by AI
 
-AI가 현장의 감시카메라 데이터를 통해 증언을 합니다.
-증언을 위한 케이스를 보유하고 있어야 하며, 증인은 여러 번 재시도 할 수 있습니다. 
-마음에 드는 증언이 출력되면 민팅할 수 있으며, 민팅에는 1MIX가 소모됩니다.
-어떤 케이스를 선택하시겠습니까?`, () => {
+제너레이티브 NFT와 AI의 만남.
+Facts By AI 발행은 종료되었습니다.
+관련 코드는 공개, 라이센스 오픈되어 있으며,
+궁금한 점은 디스코드 커뮤니티를 찾아주세요.`, () => {
                 new Selectable([{
-                    name: "샘플 케이스",
-                    callback: () => SkyRouter.go("/samplecase"),
-                }, {
-                    name: "나의 케이스",
-                    callback: () => SkyRouter.go("/mycase"),
-                }, {
-                    name: "미제 사건(케이스) 목록 조회",
-                    callback: () => new NotMintedCasesPopup(),
-                }, {
-                    name: "케이스 구매",
-                    callback: () => open("https://opensea.io/collection/cases-by-kate"),
+                    name: "케이스바이케이트 홈페이지 메인으로 이동",
+                    callback: () => open("https://www.casesbykate.xyz/"),
                 }]).appendTo(this.container);
             }),
         ));
